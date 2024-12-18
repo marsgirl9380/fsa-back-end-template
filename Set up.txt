@@ -1,0 +1,49 @@
+
+****Node
+    Run $ npm init -y
+    to create the package.json file
+
+**Install babel
+    Run $ npm install --save-dev @babel/core @babel/node @babel/preset-env
+
+    Create .babelrc file
+
+    Can create myFuction in my-script.js
+    Import myFunction from './my-script.js' to main.js
+    Run $ npx babel-node main.js
+
+    In package.json file under scripts, add "greet": "npx babel-node main.js"
+    This will allow to run $ npm run greet instead of $ npx babel-node main.js
+
+
+*****Express*****
+    $ npm install express
+
+    Create server.js file
+    $ npx babel-node src/server.js
+
+****How to get the browser to reload when you make changes so that you don't have to 
+    kill the terminal and restart it each time.********
+    
+    $ npm install --save-dev nodemon
+
+    Add this to the package.json file under scripts
+    "start": "npx nodemon --exec npx babel-node src/server.js"
+
+***Set up Routes folder
+    create helloRoutes.js file
+    create index.js file
+
+****Set up MongoDB
+    $ npm install mongodb
+
+    $ mkdir C:\data\db
+    $ mongod --dbpath "C:\data\db"
+
+****Set up db folder and create db.js file
+
+
+
+
+
+
